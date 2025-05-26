@@ -69,7 +69,7 @@ class UniversalKVLoader(BaseLoader):
         elif mime_type.startswith('image'):
             file_type = 'img'
         else:
-            raise ValueError(f'file type {file_type} is not support.')
+            raise ValueError(f'file type {mime_type} is not support.')
 
         if file_type == 'img':
             bytes_data = open(self.file_path, 'rb').read()
